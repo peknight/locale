@@ -1,4 +1,5 @@
 log/
+/locale/
 
 .mvn/
 mvnw
