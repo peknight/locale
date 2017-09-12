@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Location (CountryRegion*)>
+<!ELEMENT CountryRegion (State*)>
+<!ATTLIST CountryRegion
+	Name CDATA #REQUIRED
+	Code CDATA #REQUIRED
+>
+<!ELEMENT State (City*)>
+<!ATTLIST State
+	Name CDATA #IMPLIED
+	Code CDATA #IMPLIED
+>
+<!ELEMENT City (Region*)>
+<!ATTLIST City
+	Name CDATA #IMPLIED
+	Code CDATA #IMPLIED
+>
+<!ELEMENT Region EMPTY>
+<!ATTLIST Region
+	Name CDATA #IMPLIED
+	Code CDATA #IMPLIED
+>
+	
